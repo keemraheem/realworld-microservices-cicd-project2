@@ -32,7 +32,7 @@ pipeline{
             steps{
                 withSonarQubeEnv('Sonar-Server') {
                     sh ''' $SCANNER_HOME/bin/sonar-scanner -Dsonar.projectName=NodeJS-WebApp-Project \
-                    -Dsonar.projectKey=NodeJS-WebApp-Project \ git pu'''
+                    -Dsonar.projectKey=NodeJS-WebApp-Project '''
                 }
             }
         }
